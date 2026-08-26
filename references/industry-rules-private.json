@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "note": "check_private_output.py 使用。native = 本技能原生一级附录（强制 KPI 组），inherited = 二级继承附录（宽松检查）。",
+  "industries": {
+    "crypto-infra": {
+      "name_zh": "Crypto 基础设施", "name_en": "Crypto infrastructure", "appendix": "industries/crypto-infra.md", "tier": "native",
+      "aliases": ["crypto-infra", "l1", "l2", "rollup", "公链", "基础设施"],
+      "required_groups": [
+        {"label": "real demand fees", "terms": ["真实费用", "fees", "费用收入", "gas"]},
+        {"label": "activity & ecosystem", "terms": ["活跃地址", "active address", "开发者", "developer", "留存"]}
+      ]
+    },
+    "crypto-defi": {
+      "name_zh": "DeFi 协议", "name_en": "DeFi protocols", "appendix": "industries/crypto-defi.md", "tier": "native",
+      "aliases": ["crypto-defi", "defi", "dex", "lending", "借贷", "perp"],
+      "required_groups": [
+        {"label": "protocol economics", "terms": ["fees", "费用", "revenue", "协议收入", "take rate"]},
+        {"label": "incentive purification", "terms": ["激励", "emissions", "排放", "tvl", "留存"]}
+      ]
+    },
+    "crypto-stablecoin-payments": {
+      "name_zh": "稳定币与加密支付", "name_en": "Stablecoins & crypto payments", "appendix": "industries/crypto-stablecoin-payments.md", "tier": "native",
+      "aliases": ["crypto-stablecoin-payments", "stablecoin", "稳定币", "支付", "payments", "on-ramp"],
+      "required_groups": [
+        {"label": "supply & volume", "terms": ["供应量", "supply", "交易量", "volume", "float"]},
+        {"label": "reserves & licensing", "terms": ["储备", "reserve", "牌照", "license", "attestation", "赎回"]}
+      ]
+    },
+    "crypto-cefi-exchange": {
+      "name_zh": "CeFi 与交易所", "name_en": "CeFi & exchanges", "appendix": "industries/crypto-cefi-exchange.md", "tier": "native",
+      "aliases": ["crypto-cefi-exchange", "cefi", "exchange", "交易所", "托管", "custody", "做市"],
+      "required_groups": [
+        {"label": "volume & take rate", "terms": ["交易量", "volume", "take rate", "费率"]},
+        {"label": "custody & licensing", "terms": ["托管", "custody", "牌照", "license", "储备证明", "por", "资产隔离"]}
+      ]
+    },
+    "crypto-consumer-gaming-depin": {
+      "name_zh": "Crypto 消费/链游/DePIN", "name_en": "Crypto consumer, gaming & DePIN", "appendix": "industries/crypto-consumer-gaming-depin.md", "tier": "native",
+      "aliases": ["crypto-consumer-gaming-depin", "gamefi", "链游", "depin", "nft", "consumer crypto"],
+      "required_groups": [
+        {"label": "real users & retention", "terms": ["留存", "retention", "dau", "mau", "真实用户"]},
+        {"label": "incentive-purified economics", "terms": ["激励", "空投", "airdrop", "付费", "arpu", "需求侧"]}
+      ]
+    },
+    "crypto-rwa-tokenization": {
+      "name_zh": "RWA 与资产代币化", "name_en": "RWA & tokenization", "appendix": "industries/crypto-rwa-tokenization.md", "tier": "native",
+      "aliases": ["crypto-rwa-tokenization", "rwa", "tokenization", "代币化", "链上资管"],
+      "required_groups": [
+        {"label": "aum & fees", "terms": ["aum", "净费率", "费率", "fee"]},
+        {"label": "legal structure", "terms": ["法律结构", "索取权", "破产隔离", "spv", "托管", "赎回"]}
+      ]
+    },
+    "ai-native": {
+      "name_zh": "AI-Native 公司", "name_en": "AI-native companies", "appendix": "industries/ai-native.md", "tier": "native",
+      "aliases": ["ai-native", "ai", "foundation model", "基础模型", "ai infra", "agent"],
+      "required_groups": [
+        {"label": "arr quality", "terms": ["arr", "committed", "试点", "poc", "留存"]},
+        {"label": "gross margin & compute", "terms": ["毛利", "gross margin", "推理成本", "inference", "算力"]}
+      ]
+    },
+    "biotech-private": {
+      "name_zh": "Biotech 一级", "name_en": "Private biotech", "appendix": "industries/biotech-private.md", "tier": "native",
+      "aliases": ["biotech-private", "biotech", "创新药", "制药", "cgt", "adc"],
+      "required_groups": [
+        {"label": "pipeline & milestones", "terms": ["管线", "pipeline", "临床", "clinical", "里程碑", "ind", "ph1", "ph2", "ph3"]},
+        {"label": "runway & probability", "terms": ["runway", "现金", "成功概率", "pos", "rnpv", "base rate"]}
+      ]
+    },
+    "saas": {"name_zh": "SaaS", "name_en": "SaaS", "appendix": "industries/saas.md", "tier": "inherited", "aliases": ["saas", "订阅软件"], "required_groups": [{"label": "retention", "terms": ["nrr", "留存", "churn", "retention"]}]},
+    "internet-platform": {"name_zh": "互联网/平台", "name_en": "Internet platforms", "appendix": "industries/internet-platform.md", "tier": "inherited", "aliases": ["internet", "平台", "marketplace"], "required_groups": [{"label": "monetization", "terms": ["take rate", "gmv", "变现", "用户"]}]},
+    "payments-fintech": {"name_zh": "支付/金融科技", "name_en": "Payments & fintech", "appendix": "industries/payments-fintech.md", "tier": "inherited", "aliases": ["payments", "fintech", "支付"], "required_groups": [{"label": "volume economics", "terms": ["tpv", "take rate", "交易量"]}]},
+    "capital-markets": {"name_zh": "资本市场基础设施", "name_en": "Capital markets", "appendix": "industries/capital-markets.md", "tier": "inherited", "aliases": ["capital markets", "资管", "交易所"], "required_groups": [{"label": "aum or volume", "terms": ["aum", "交易量", "费率"]}]},
+    "semiconductors": {"name_zh": "半导体", "name_en": "Semiconductors", "appendix": "industries/semiconductors.md", "tier": "inherited", "aliases": ["semiconductor", "芯片"], "required_groups": [{"label": "unit economics", "terms": ["asp", "良率", "产能", "wafer"]}]},
+    "hardware": {"name_zh": "硬件", "name_en": "Hardware", "appendix": "industries/hardware.md", "tier": "inherited", "aliases": ["hardware", "硬件"], "required_groups": [{"label": "bom & units", "terms": ["bom", "units", "asp", "量产"]}]},
+    "pharma": {"name_zh": "医药（商业化）", "name_en": "Pharma", "appendix": "industries/pharma.md", "tier": "inherited", "aliases": ["pharma", "医药"], "required_groups": [{"label": "pipeline", "terms": ["管线", "rnpv", "临床"]}]},
+    "healthcare-services": {"name_zh": "医疗服务/器械", "name_en": "Healthcare services", "appendix": "industries/healthcare-services.md", "tier": "inherited", "aliases": ["healthcare", "医疗"], "required_groups": [{"label": "volume & reimbursement", "terms": ["报销", "利用率", "单位经济"]}]},
+    "consumer": {"name_zh": "消费", "name_en": "Consumer", "appendix": "industries/consumer.md", "tier": "inherited", "aliases": ["consumer", "消费"], "required_groups": [{"label": "volume price mix", "terms": ["量价", "同店", "复购", "客单"]}]},
+    "media-gaming": {"name_zh": "游戏/媒体", "name_en": "Media & gaming", "appendix": "industries/media-gaming.md", "tier": "inherited", "aliases": ["gaming", "游戏", "媒体"], "required_groups": [{"label": "user monetization", "terms": ["付费", "arpu", "留存", "dau"]}]},
+    "banks": {"name_zh": "银行", "name_en": "Banks", "appendix": "industries/banks.md", "tier": "inherited", "aliases": ["bank", "银行"], "required_groups": [{"label": "spread", "terms": ["nim", "净息差", "信用成本"]}]},
+    "insurance": {"name_zh": "保险", "name_en": "Insurance", "appendix": "industries/insurance.md", "tier": "inherited", "aliases": ["insurance", "保险"], "required_groups": [{"label": "underwriting", "terms": ["combined ratio", "综合成本率", "准备金"]}]},
+    "energy": {"name_zh": "能源", "name_en": "Energy", "appendix": "industries/energy.md", "tier": "inherited", "aliases": ["energy", "能源"], "required_groups": [{"label": "cost curve", "terms": ["成本", "储量", "产量"]}]},
+    "utilities": {"name_zh": "公用事业", "name_en": "Utilities", "appendix": "industries/utilities.md", "tier": "inherited", "aliases": ["utilities", "公用事业", "电力"], "required_groups": [{"label": "rate base", "terms": ["roe", "rate base", "电价"]}]},
+    "industrials": {"name_zh": "工业/机械", "name_en": "Industrials", "appendix": "industries/industrials.md", "tier": "inherited", "aliases": ["industrials", "工业"], "required_groups": [{"label": "orders", "terms": ["订单", "backlog", "book-to-bill"]}]},
+    "telecom": {"name_zh": "电信", "name_en": "Telecom", "appendix": "industries/telecom.md", "tier": "inherited", "aliases": ["telecom", "电信"], "required_groups": [{"label": "arpu", "terms": ["arpu", "churn", "capex"]}]},
+    "reits": {"name_zh": "地产/REIT", "name_en": "REITs", "appendix": "industries/reits.md", "tier": "inherited", "aliases": ["reit", "地产"], "required_groups": [{"label": "noi", "terms": ["noi", "ffo", "cap rate"]}]},
+    "autos-ev": {"name_zh": "汽车/EV", "name_en": "Autos & EV", "appendix": "industries/autos-ev.md", "tier": "inherited", "aliases": ["auto", "ev", "汽车", "整车"], "required_groups": [{"label": "unit economics", "terms": ["单车", "asp", "毛利", "交付"]}]},
+    "metals-mining": {"name_zh": "金属/矿业", "name_en": "Metals & mining", "appendix": "industries/metals-mining.md", "tier": "inherited", "aliases": ["mining", "矿业", "金属"], "required_groups": [{"label": "cost curve", "terms": ["aisc", "成本曲线", "储量", "品位"]}]},
+    "transport": {"name_zh": "航空/运输", "name_en": "Transport", "appendix": "industries/transport.md", "tier": "inherited", "aliases": ["transport", "运输", "航空", "物流"], "required_groups": [{"label": "unit economics", "terms": ["单位收益", "载运率", "运力", "yield"]}]}
+  }
+}

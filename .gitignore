@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# Google Drive 指针文件（指向内部机密语料，绝不入库）
+*.gdoc
+*.gsheet
+*.gslides
+
+# 内部工作文件：估值假设 JSON、脚本原始输出（按 output-format.md 第 6 节，非交付物）
+reports/workspace/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# 研究报告产出（含具体标的结论，不入库）
+reports/
